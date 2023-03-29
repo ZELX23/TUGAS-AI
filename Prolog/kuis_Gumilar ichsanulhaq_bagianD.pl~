@@ -1,0 +1,10 @@
+ankbuah(adi, burhan).
+ankbuah(burhan, bahrun).
+ankbuah(burhan, bisrin).
+ankbuah(bahrun, fahri).
+ankbuah(bahrun, farah).
+ankbuah(bisrin, ferdi).
+bawahanlangsung(A,B):- ankbuah(A,B).
+atasanlangsung(A,B):- ankbuah(B,A).
+ankbuahbawahan(A,B):- bawahanlangsung(A,B).
+ankbuahbawahan(A,B):- bawahalangsung(A,AB),ankbuahbawahan(AB,B).
